@@ -16,7 +16,6 @@ set(COMMON_SOURCES
 add_executable(tape_sort
         main.cpp
         ${COMMON_SOURCES}
-        TapeSorterTest.cpp
 )
 
 # Google Test
