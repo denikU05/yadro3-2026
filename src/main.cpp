@@ -1,5 +1,5 @@
 #include "TapeConfig.h"
-#include "FileTape.h"    // Наш единственный бинарный класс ленты
+#include "FileTape.h"
 #include "TapeSorter.h"
 #include <iostream>
 #include <fstream>

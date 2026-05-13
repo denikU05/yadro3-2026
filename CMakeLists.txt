@@ -11,10 +11,11 @@ set(COMMON_SOURCES
         TapeConfig.h
         ITape.h
 )
+list(TRANSFORM COMMON_SOURCES PREPEND src/)
 
 # Console app
 add_executable(tape_sort
-        main.cpp
+        src/main.cpp
         ${COMMON_SOURCES}
 )
 
@@ -29,7 +30,7 @@ FetchContent_MakeAvailable(googletest)
 
 # Google test app
 add_executable(run_tests
-        TapeSorterTest.cpp
+        src/TapeSorterTest.cpp
         ${COMMON_SOURCES}
 )
 
